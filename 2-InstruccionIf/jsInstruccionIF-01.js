@@ -1,6 +1,14 @@
+/*autor eliel If-01*/
 function mostrar()
 {
-	//tomo la edad  
-	alert("ok");
+	var edad;
+	var mensaje;
 
-}//FIN DE LA FUNCIÓN
+	edad=document.getElementById("txtIdEdad").value  
+	
+	if(edad==15){
+		mensaje="Niña bonita";
+	}
+
+	alert(mensaje);
+}

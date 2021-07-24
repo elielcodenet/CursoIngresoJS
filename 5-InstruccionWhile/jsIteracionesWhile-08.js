@@ -12,8 +12,21 @@ function mostrar()
 	multiplicacionNegativos=1;
 	respuesta='si';
 
+	while(respuesta=='si'){
+		numeroIngresado=prompt("Ingrese numero: ");
+		numeroIngresado=parseInt(numeroIngresado);
+		if(numeroIngresado<0){
+			multiplicacionNegativos=numeroIngresado*multiplicacionNegativos;
+			
+		}else{
+			sumaPositivos=numeroIngresado+sumaPositivos;
+			
+		}
+		contador++;
+		respuesta=prompt("Quiere seguir sumando?:")
+	}
 
 	txtIdSuma.value=sumaPositivos;
-	txtIdProducto.value=multiplicacionNegativos;
+	txtIdProducto.value="-"+multiplicacionNegativos;
 
 }//FIN DE LA FUNCIÓN

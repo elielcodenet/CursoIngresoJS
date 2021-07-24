@@ -1,7 +1,16 @@
+/*Autor: eliel If-02*/
+
+
 function mostrar()
 {
-	//tomo la edad  
-	alert("ok");
+	var edad;
+	var mensaje;
+
+	edad=document.getElementById("txtIdEdad").value;
+	if(edad>17){
+		mensaje="Usted es mayor de edad";
+	}  
+	alert(mensaje);
 	
 
 }//FIN DE LA FUNCIÓN

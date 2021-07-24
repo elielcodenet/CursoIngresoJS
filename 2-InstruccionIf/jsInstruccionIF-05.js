@@ -1,6 +1,17 @@
+/*autor eliel
+if 05*/
 function mostrar()
 {
-	//tomo la edad  
-	alert("ok");
+	var edad;
+	var mensaje;
 
-}//FIN DE LA FUNCIÓN
+	edad=document.getElementById("txtIdEdad").value;
+	
+	if(edad > 17 || edad < 13){
+		mensaje="Usted no es adolecente";
+	};
+
+	alert(mensaje);
+
+
+}
